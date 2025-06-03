@@ -7,3 +7,33 @@ h1 {
     font-family: sans-serif;
     
 }
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+    justify-content: center;
+    margin: 1rem 0;
+    width: max-content;
+}
+.tile {
+    background-color: rgb(123, 162, 131);
+    border: 1px solid black;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
