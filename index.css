@@ -62,16 +62,25 @@ nav button {
   cursor: pointer;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 2rem;
-}
 section:target, #home {
   display: block;
 }
 
 figure {
   text-align: center;
+}
+
+button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #777;
 }
