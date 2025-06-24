@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tic-Tac_Toe</title>
-        <link rel="stylesheet" href="index.css">
-        <script src="index.js" defer></script>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
 <body>
-    <h1>Tic-Tac-Toe</h1>
-    
-<header>
-    
-</header>
-<main>
-    <section id="home">
-        
-    </section>
-    <section id="game">
-        <h2>Play Game</h2>
-        <div class="board">
+  <div class="container">
+    <header>
+        <figure class="logo">
+            <img src="logo.png" alt="Tic-Tac-Toe Logo">
+            <figcaption><h1>Tic-Tac-Toe</h1></figcaption>
+        </figure>
+        <span class="filler"></span>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('game')">Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+      <div class="content">
+        <section id="home">
+          <h2>Welcome</h2>
+          <p class="home">This site lets you play Tic-Tac-Toe! Click on the Game link to start playing</p>
+        </section>
+
+        <section id="game">
+          <h2>Play Game</h2>
+          <div class="board">
             <div class="tile" onclick="makeMove(this, 0)"></div>
             <div class="tile" onclick="makeMove(this, 1)"></div>
             <div class="tile" onclick="makeMove(this, 2)"></div>
@@ -29,22 +44,21 @@
             <div class="tile" onclick="makeMove(this, 6)"></div>
             <div class="tile" onclick="makeMove(this, 7)"></div>
             <div class="tile" onclick="makeMove(this, 8)"></div>
-        </div>
-        <p id="winner"></p>
-        <button onclick="resetGame()">Reset Game</button>
-    </section>
+          </div>
+          <p class="winner" id="winner"></p>
+          <button onclick="resetGame()">Reset Game</button>
+        </section>
 
-    <section id="contact" style="display:none;">
-        <h2>Contact Me</h2>
-        <p>Email: 10694227@uvu.edu</p>
-    </section>
-</main>
-<footer>
-    <p>&copy 2025 Sarah's Projects</p>
-</footer>
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <p class="email">Email: 10694227@uvu.edu</p>
+        </section>
+      </div>
+    </main>
 
+    <footer>
+      <p>&copy; 2025 Sarah's Projects</p>
+    </footer>
+  </div>
 </body>
-
-
 </html>
-
