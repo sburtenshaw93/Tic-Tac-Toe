@@ -52,3 +52,7 @@ function resetGame() {
     tile.textContent = "";
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  showSection('home');
+});
